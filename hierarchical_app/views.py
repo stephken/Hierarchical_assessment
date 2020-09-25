@@ -5,3 +5,4 @@ from hierarchical_app.models import Folder
 
 def index_view(request):
     return render(request, 'index.html', {'welcome': "Welcome to Kens Hierarchical Data and You assessment", 'folders': Folder.objects.all()})
+
